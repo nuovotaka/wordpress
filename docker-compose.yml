@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:5.7
     volumes:
-      - "./.data/db:/var/lib/mysql"
+      - "./data/db:/var/lib/mysql"
     restart: always
     ports:
       - "3306:3306"
@@ -27,4 +27,3 @@ services:
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_PASSWORD: wordpress
-  
