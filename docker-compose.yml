@@ -16,7 +16,7 @@ services:
   wordpress:
     depends_on:
       - db
-    build: ./my-wp
+    image: wordpress:latest
     links:
       - db
     ports:
