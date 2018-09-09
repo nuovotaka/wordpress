@@ -6,7 +6,7 @@ RUN apt-get -y install wget unzip
  
 # WP プラグイン (zip) ダウンロード
 WORKDIR /tmp/wp-plugins
-RUN wget https://downloads.wordpress.org/plugin/contact-form-5.0.4.zip
+RUN wget https://downloads.wordpress.org/plugin/contact-form-7.5.0.4.zip
  
 # Zip ファイルを解凍してインストール
 RUN unzip './*.zip' -d /usr/src/wordpress/wp-content/plugins
